@@ -1,32 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#111318" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0f14" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="STRONGER" />
   <title>STRONGER</title>
   <link rel="manifest" href="./manifest.json" />
-  <link rel="icon" href="./icon.svg" />
+  <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+  <link rel="icon" href="./icons/icon-192.png" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <div id="app">
+  <div id="appShell">
     <header class="topbar">
       <div>
-        <div class="eyebrow">STRONGER</div>
+        <div class="brand">STRONGER</div>
         <h1 id="pageTitle">Aujourd’hui</h1>
       </div>
-      <button id="settingsButton" class="icon-button">⚙️</button>
+      <button class="iconBtn" id="settingsBtn" aria-label="Paramètres">⚙️</button>
     </header>
-    <main id="mainContent"></main>
-    <nav class="bottom-nav">
-      <button data-page="home" class="nav-item active"><span>🏠</span><small>Accueil</small></button>
-      <button data-page="program" class="nav-item"><span>🏋️</span><small>Programme</small></button>
-      <button data-page="history" class="nav-item"><span>📅</span><small>Historique</small></button>
-      <button data-page="progress" class="nav-item"><span>📈</span><small>Progrès</small></button>
+
+    <main id="main"></main>
+
+    <nav class="bottomNav" aria-label="Navigation principale">
+      <button data-route="home" class="navBtn active"><span>⌂</span><small>Accueil</small></button>
+      <button data-route="program" class="navBtn"><span>🏋️</span><small>Programme</small></button>
+      <button data-route="progress" class="navBtn"><span>📈</span><small>Progrès</small></button>
+      <button data-route="history" class="navBtn"><span>🗓️</span><small>Historique</small></button>
     </nav>
   </div>
+
   <div id="modalRoot"></div>
+  <div id="toast" class="toast"></div>
+
   <script src="./app.js"></script>
 </body>
 </html>

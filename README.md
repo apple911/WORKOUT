@@ -1,31 +1,46 @@
-# STRONGER
+# STRONGER V2
 
-Application PWA de musculation en français, conçue pour iPhone et compatible GitHub Pages.
+Application PWA iPhone en français pour un entraînement débutant 3x/semaine.
 
-## Contenu
-- Programme 3 jours : A / B / C
-- Suivi poids + répétitions
+## Installation sur GitHub Pages
+
+1. Crée un dépôt GitHub public.
+2. Décompresse ce ZIP.
+3. Mets **tous les fichiers et le dossier `icons` à la racine du dépôt**.
+4. GitHub → Settings → Pages.
+5. Source : **Deploy from a branch**
+6. Branch : **main**
+7. Folder : **/(root)**
+8. Save.
+9. Attends le déploiement.
+10. Ouvre l'adresse GitHub Pages dans Safari sur iPhone.
+11. Partager → **Ajouter à l’écran d’accueil**.
+
+## Fonctions incluses
+
+- Onboarding débutant
+- Programme corps complet A/B/C
+- Mode 45 ou 60 minutes
+- Recommandation de charge de départ
+- Progression basée sur reps + difficulté
+- Feedback après chaque série
 - Minuteur de repos
-- Historique des séances
-- Progrès par exercice
-- Sauvegarde locale
-- Export / import JSON
-- Fonctionnement hors ligne via service worker
-
-## Mise en ligne sur GitHub Pages
-1. Crée un nouveau repository GitHub.
-2. Téléverse tous les fichiers de ce dossier à la racine du repository.
-3. Ouvre **Settings > Pages**.
-4. Dans **Build and deployment**, choisis **Deploy from a branch**.
-5. Sélectionne **main** puis **/(root)**.
-6. Clique sur **Save**.
-7. Ouvre l'URL GitHub Pages fournie.
-
-## Installation sur iPhone
-1. Ouvre l'URL dans Safari.
-2. Appuie sur le bouton Partager.
-3. Choisis **Ajouter à l'écran d'accueil**.
-4. Appuie sur **Ajouter**.
+- Historique
+- Graphiques de progression
+- Records de charge
+- Suivi facultatif cou/haut du dos avant/après
+- Alternatives quand une machine est occupée
+- Cardio vélo guidé
+- Thème clair/sombre
+- lb/kg
+- Export/import sauvegarde JSON
+- PWA installable
+- Fonctionnement hors ligne
 
 ## Important
-Les données d'entraînement sont conservées localement sur l'appareil. Utilise l'export de sauvegarde dans les paramètres si tu veux conserver une copie de ton historique.
+
+Les recommandations de charge sont des points de départ prudents pour un débutant, pas une prescription médicale. Pour les exercices du cou, l’application privilégie le contrôle et une faible intensité. Arrête un exercice s’il provoque une douleur nette, des étourdissements, des engourdissements, une douleur qui irradie ou un déclenchement clair de tes maux de tête.
+
+## Mise à jour
+
+Si GitHub Pages semble afficher une ancienne version, attends quelques minutes puis ferme/réouvre l’app. Le service worker utilise un cache versionné (`stronger-v2.0.0`).
